@@ -18,7 +18,7 @@ public class Portal : MonoBehaviour
         if(collision.CompareTag("Player"))
         {
             // 게임상태 변경
-            GameManager.Instance.Change_GameState(Game_State.Menu);
+            GameManager.Instance.Change_GameState(Game_State.Stop);
 
             dungeonManager.MoveToNextRoom(portalInfo.targetRoomID, portalInfo.targetSpawnDir);
         }

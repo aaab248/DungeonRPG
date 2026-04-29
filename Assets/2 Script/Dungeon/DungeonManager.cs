@@ -119,9 +119,9 @@ public class DungeonManager : MonoBehaviour
         fadeImage.color = c;
         fadeImage.gameObject.SetActive(false);
 
-        player.gameObject.SetActive(true);
-
         GameManager.Instance.Change_GameState(Game_State.Playing);
+
+        player.gameObject.SetActive(true);
 
         mapData.currentRoom = targetRoom.roomInfo;
         currentRoom = targetRoom;

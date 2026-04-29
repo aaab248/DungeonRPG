@@ -44,9 +44,9 @@ public class GameManager : MonoBehaviour
 
     public void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Tab))
+        if (Input.GetKeyDown(KeyCode.Tab))
         {
-            Change_GameState(setMenuUI ? Game_State.Playing: Game_State.Menu);
+            Change_GameState(setMenuUI ? Game_State.Playing : Game_State.Stop);
 
             setMenuUI = !setMenuUI;
             MenuPanel.SetActive(setMenuUI);

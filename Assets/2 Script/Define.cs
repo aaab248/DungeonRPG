@@ -2,7 +2,7 @@
 public enum Game_State
 {
     Playing,
-    Menu
+    Stop
 }
 
 public enum Room_Type
